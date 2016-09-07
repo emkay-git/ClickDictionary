@@ -1,0 +1,1 @@
+web: gunicorn meaningFinder:app --log-file -
