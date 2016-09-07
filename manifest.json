@@ -1,12 +1,13 @@
 {
   "manifest_version": 2,
 
-  "name": "Word Meaning",
-  "description": "Extension is to show the meaning on the same page",
+  "name": "ClickDictionary",
+  "description": "Extension is to show the meaning on the same page when a word is double Clicked",
   "version": "1.0",
   "permissions": [ "tabs"  
 ],
   "background": {"scripts": ["jquery.min.js","background.js"]},
+  
   
   "content_scripts": [
 {
