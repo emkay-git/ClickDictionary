@@ -1,1 +1,4 @@
 *.pyc
+Procfile
+requirements.txt
+meaningFinder.py
