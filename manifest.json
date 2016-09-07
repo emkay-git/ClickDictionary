@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Word Meaning",
+  "description": "Extension is to show the meaning on the same page",
+  "version": "1.0",
+  "permissions": [ "tabs"  
+],
+  "background": {"scripts": ["jquery.min.js","background.js"]},
+  
+  "content_scripts": [
+{
+  "matches": [
+    "https://*/*","http://*/*"
+  ],
+  
+  "js":  ["jquery.min.js","bootstrap.min.js","content.js"]
+
+}
+  ]
+
+}
