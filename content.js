@@ -23,7 +23,7 @@ $(document).dblclick(function(e) {
     console.log("word is "+t);
   
   
-  if(t.length!=0)
+  if(t.length>1)
    chrome.runtime.sendMessage({word:t},function(response){
     
 });
