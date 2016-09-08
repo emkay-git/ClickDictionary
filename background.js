@@ -18,7 +18,7 @@ chrome.runtime.onMessage.addListener(function(request,sender,sendResponse){
 function downloadVideo(word)
 {
 	var temp=''
-	$.get("http://localhost:5000?word="+word,function(data){
+	$.get("http://agile-cliffs-39753.herokuapp.com/?word="+word,function(data){
 		console.log(data);
 
 chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
