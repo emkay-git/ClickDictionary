@@ -4,20 +4,18 @@ chrome.runtime.onMessage.addListener(function(request,sender,sendResponse){
 	wordR=request.word;
 	console.log('word is '+wordR);
 
-	// means
-	var meaning='dummy;'
-	meaning=downloadVideo(wordR);
+	
+	findMeaning(wordR);
 
 
 	
-	//sendResponse({meaning:meaning});
 	
 });
 
 
-function downloadVideo(word)
+function findMeaning(word)
 {
-	var temp=''
+	
 	$.get("http://agile-cliffs-39753.herokuapp.com/?word="+word,function(data){
 		console.log(data);
 
