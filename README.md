@@ -20,4 +20,4 @@ Double click on any word in the web page and you will get the meaning of that wo
 Feel free to come up with new ideas, fork and make contribution to make it better extension.
 
 ## License
-This project is licensed under MIT License.
+This project is licensed under [MIT License](/LICENSE).
