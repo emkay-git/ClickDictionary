@@ -17,7 +17,7 @@ Double click on any word in the web page and you will get the meaning of that wo
 2. Using modal box instead of alert box near the word selected to show the meaning for better apperance.
 
 ## Contribution
-Feel free to come up with new ideas, fork and make contribution to make it better extension.
+Feel free to come up with new ideas, fork, make pull requests and make contribution to make it better extension.
 
 ## License
 This project is licensed under [MIT License](/LICENSE).
