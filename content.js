@@ -17,18 +17,49 @@ function getWord() {
     
 
 }
-var t='';
-$(document).dblclick(function(e) {
-     t = getWord();
+
+
+
+var clicks = '';
+var t = '';
+window.addEventListener('click', function (evt) {
+
+
+    if(evt.detail === 2)
+    {
+       clicks = 2;
+        t = getWord();
     console.log("word is "+t);
-  
+   ;
   
   if(t.length>1)
    chrome.runtime.sendMessage({word:t},function(response){
     
 });
+
+    }
+    else
+    {
+        clicks = 3;
+    }
+});
+
+
+
+
+
+//previously getting double clicks as follows... not supporting triple clicks
+// $(document).dblclick(function(e) {
+//      t = getWord();
+//     console.log("word is "+t);
+//     console.log(e);
+  
+//   if(t.length>1)
+//    chrome.runtime.sendMessage({word:t},function(response){
     
- });
+// });
+    
+//  });
 
 chrome.runtime.onMessage.addListener(function(request,sender,sendResponse){
     //console.log('ok im in');
@@ -99,6 +130,7 @@ else formattedMeaning+="\n";
     }
     if(flag!=true)
         formattedMeaning+="No meanings found. Sorry!"
+    if(clicks==2)
      alert(formattedMeaning);
    
     
