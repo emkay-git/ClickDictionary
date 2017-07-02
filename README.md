@@ -2,8 +2,20 @@
 It's a Google chrome/Chromium browser extension to get the meaning of all the new words you come across when browsing online. 
 
 Double click on any word in the web page and you will get the meaning of that word in the alert box.
-</br></br>
-![Preview Image](./preview.png "Double click on a word shows meaning")
+</br>
+
+<p align="center">
+<img src="https://github.com/emkay-git/ClickDictionary/blob/master/preview.png" alt"Double click on a word shows meaning">
+</p>
+</br>
+
+Alert box can show some limited text in different cateogry, to see more details (if any availble) on the same meaning you can see developer console, use `ctrl+shift+i`.</br></br>
+<p align="center">
+<img src="https://github.com/emkay-git/ClickDictionary/blob/master/preview2.png" alt"Double click on a word shows meaning">
+</p>
+
+This extension uses **Python** script in the background that get the meanings from a library. This python script is deployed on
+**Heroku** platform.
 
 ## Setup Extension
 1. Download the zip from github and extract it or clone the repository.
