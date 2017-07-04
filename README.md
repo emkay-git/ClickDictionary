@@ -26,7 +26,8 @@ This extension uses **Python** script in the background that get the meanings fr
 
 ## Suggested Improvements
 1. ~~Triple click to select the whole line also gives the meaning of the word, any output for triple click has to be disabled.~~
-2. ~~Using modal box instead of alert box near the word selected to show the meaning for better apperance.~~ I really suck at HTML and CSS as a result I had a hard time making my custom modal, also modal offered by bootstrap couldn't be used. Problem being some of the sites would override many of the CSS values of the bootstrap's modal box. Finally I ended up using **[jAlert](https://www.flwebsites.biz/jAlert/)** which is an awesome alternative for regular Alert and bootstrap's modal box. I have tested on some of the sites, it's working fine yet. If you see any trouble, do open up an issue or report it to me any other way.
+2. ~~Using modal box instead of alert box near the word selected to show the meaning for better apperance.~~ I really suck at HTML and CSS as a result I had a hard time making my custom modal, also modal offered by bootstrap couldn't be used. Problem being some of the sites would override many of the CSS values of the bootstrap's modal box. Finally I ended up using **[jAlert](https://www.flwebsites.biz/jAlert/)** which is an awesome alternative for regular Alert and bootstrap's modal box. I have tested on some of the sites, it's working fine yet. If you see any trouble, do open up an issue or report it to me any other way. If anyone is willing to make a custom modal with me which works properly on all sites, do contribute.
+3. Meaning for some of the words are not available in dictionary. Right now a sorry message is displayed which is not really cool. Something else can be done to provide meaning for those words.
 
 ## Contribution
 Feel free to come up with new ideas, fork, make pull requests or open an issue and make contribution to make it better extension.
