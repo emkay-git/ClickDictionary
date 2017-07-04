@@ -1,7 +1,7 @@
 # ClickDictionary
 It's a Google chrome/Chromium browser extension to get the meaning of all the new words you come across when browsing online. 
 
-Double click on any word in the web page and you will get the meaning of that word in the alert box.
+Double click on any word in the web page and you will get the meaning of that word in the alert box (actually **[jAlert](https://www.flwebsites.biz/jAlert/)** box).
 </br>
 
 <p align="center">
