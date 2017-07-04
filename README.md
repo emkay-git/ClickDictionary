@@ -9,7 +9,7 @@ Double click on any word in the web page and you will get the meaning of that wo
 </p>
 </br>
 
-Alert box can show some limited text in different cateogry, to see more details (if any availble) on the same meaning you can see developer console, use `ctrl+shift+i`.</br></br>
+I have restricted alert box to show limited text in different cateogry, to see more details (if any availble) on the same word-meaning you can see developer console, use `ctrl+shift+i`.</br></br>
 <p align="center">
 <img src="https://github.com/emkay-git/ClickDictionary/blob/master/preview2.png" alt"Double click on a word 'study' shows meaning">
 </p>
