@@ -71,67 +71,85 @@ chrome.runtime.onMessage.addListener(function(request,sender,sendResponse){
     var flag=false;
     //var formattedMeaning='Meanings\n';
 
-    var formattedMeaning=t+'\n';
+  // var formattedMeaning=t+'<br>';
+  var formattedMeaning='<p style="font-size: 20px; line-height: 150%">';
     if(meaning!=='null' && typeof jsonMeaning != 'undefined')
     {
 flag=true;
     if(typeof jsonMeaning["Verb"] !='undefined' && jsonMeaning["Verb"].length!=0)
        {   
-         formattedMeaning+="Verb\n"
+         formattedMeaning+="Verb<br>"
         for(i=1;i<=Math.min(jsonMeaning["Verb"].length,6);i++)
             {
                 formattedMeaning+=i+") "+jsonMeaning["Verb"][i-1];
         if(jsonMeaning["Verb"][i-1].indexOf('(')>-1)
-            formattedMeaning+=')'+"\n";
-else formattedMeaning+="\n";
+            formattedMeaning+=')'+"<br>";
+else formattedMeaning+="<br>";
         }
-        formattedMeaning+="\n";
+        formattedMeaning+="<br>";
     }
 
     if(typeof jsonMeaning["Noun"] !='undefined' && jsonMeaning["Noun"].length!=0)
     {   flag=true;
-         formattedMeaning+="Noun\n"
+         formattedMeaning+="Noun<br>"
         for(i=1;i<=Math.min(jsonMeaning["Noun"].length,6);i++)
         {
             formattedMeaning+=i+") "+jsonMeaning["Noun"][i-1];
         if(jsonMeaning["Noun"][i-1].indexOf('(')>-1)
-            formattedMeaning+=')'+"\n";
-else formattedMeaning+="\n";
+            formattedMeaning+=')'+"<br>";
+else formattedMeaning+="<br>";
         }
-        formattedMeaning+="\n";
+        formattedMeaning+="<br>";
         
     }
     
-       // formattedMeaning+="Verb Section\n"+jsonMeaning["Verb"]+"\n";
+       // formattedMeaning+="Verb Section<br>"+jsonMeaning["Verb"]+"<br>";
     if(typeof jsonMeaning["Adjective"]!= 'undefined' && jsonMeaning["Adjective"].length!=0)
         {   flag=true;
-         formattedMeaning+="Adjective\n"
+         formattedMeaning+="Adjective<br>"
         for(i=1;i<=Math.min(jsonMeaning["Adjective"].length,6);i++)
         {
             formattedMeaning+=i+") "+jsonMeaning["Adjective"][i-1];
         if(jsonMeaning["Adjective"][i-1].indexOf('(')>-1)       
-            formattedMeaning+=')'+"\n";
-            else formattedMeaning+="\n";
+            formattedMeaning+=')'+"<br>";
+            else formattedMeaning+="<br>";
         }
+        formattedMeaning+="<br>"
     }
-        //formattedMeaning+="Adjective Section\n"+jsonMeaning["Adjective"]+"\n";
+        //formattedMeaning+="Adjective Section<br>"+jsonMeaning["Adjective"]+"<br>";
     if(typeof jsonMeaning["Adverb"]!= 'undefined' && jsonMeaning["Adverb"].length!=0)
         {   flag=true;
-         formattedMeaning+="Adverb\n"
+         formattedMeaning+="Adverb<br>"
         for(i=1;i<=Math.min(jsonMeaning["Adverb"].length,6);i++)
         {
             formattedMeaning+=i+") "+jsonMeaning["Adverb"][i-1];
         if(jsonMeaning["Adverb"][i-1].indexOf('(')>-1)       
-            formattedMeaning+=')'+"\n";
-            else formattedMeaning+="\n";
+            formattedMeaning+=')'+"<br>";
+            else formattedMeaning+="<br>";
         }
     }
 
     }
+
     if(flag!=true)
-        formattedMeaning+="No meanings found. Sorry!"
+        formattedMeaning+="No meanings found. Sorry!";
+
     if(clicks==2)
-     alert(formattedMeaning);
+    {   
+            $.jAlert({
+        'title':t,
+        'content': formattedMeaning+'</p>',
+        'theme': 'gray',
+        'size': 'auto',
+        'closeOnClick': true
+     });
+     }
+
+     //alert(formattedMeaning);
+     
    
     
 });
+
+
+

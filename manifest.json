@@ -14,8 +14,9 @@
   "matches": [
     "https://*/*","http://*/*"
   ],
+  "css": [ "jAlert-master/dist/jAlert.css" ],
   
-  "js":  ["jquery.min.js","bootstrap.min.js","content.js"]
+  "js":  ["jquery.min.js","content.js","jAlert-master/dist/jAlert.min.js","jAlert-master/dist/jAlert-functions.min.js"]
 
 }
   ]
