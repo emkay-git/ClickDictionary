@@ -11,7 +11,7 @@ Double click on any word in the web page and you will get the meaning of that wo
 
 Alert box can show some limited text in different cateogry, to see more details (if any availble) on the same meaning you can see developer console, use `ctrl+shift+i`.</br></br>
 <p align="center">
-<img src="https://github.com/emkay-git/ClickDictionary/blob/master/preview2.png" alt"Double click on a word shows meaning">
+<img src="https://github.com/emkay-git/ClickDictionary/blob/master/preview2.png" alt"Double click on a word 'study' shows meaning">
 </p>
 
 This extension uses **Python** script in the background that get the meanings from a library. This python script is deployed on
@@ -26,10 +26,10 @@ This extension uses **Python** script in the background that get the meanings fr
 
 ## Suggested Improvements
 1. ~~Triple click to select the whole line also gives the meaning of the word, any output for triple click has to be disabled.~~
-2. Using modal box instead of alert box near the word selected to show the meaning for better apperance.
+2. ~~Using modal box instead of alert box near the word selected to show the meaning for better apperance.~~ I really suck at HTML and CSS as a result I had a hard time making my custom modal, also modal offered by bootstrap couldn't be used. Problem being some of the sites would override many of the CSS values of the bootstrap's modal box. Finally I ended up using **[jAlert](https://www.flwebsites.biz/jAlert/)** which is an awesome alternative for regular Alert and bootstrap's modal box. I have tested on some of the sites, it's working fine yet. If you see any trouble, do open up an issue or report it to me any other way.
 
 ## Contribution
-Feel free to come up with new ideas, fork, make pull requests and make contribution to make it better extension.
+Feel free to come up with new ideas, fork, make pull requests or open an issue and make contribution to make it better extension.
 
 ## License
 This project is licensed under [MIT License](/LICENSE).

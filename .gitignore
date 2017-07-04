@@ -1,5 +1,4 @@
 *.pyc
 Procfile
 requirements.txt
-meaningFinder.py
 jAlert-master.zip
